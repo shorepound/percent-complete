@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>jQuery + CSS3 Gauge</title>
+</head>
+<body>
+
+	<div id="precent-complete" class="diagram"
+		data-circle-diagram='{
+			"percent": "37.5%",
+			"size": "280",
+			"borderWidth": "80",
+			"bgFill": "#cacaca",
+			"frFill": "#6c3",
+			"textSize": "56",
+			"textColor": "#585858"
+			}'>
+	</div>
+	<div>profile completion percentage</div>
+	
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.circle-diagram.js"></script>
+	<script>
+	  $(function() {
+    	$('#precent-complete').circleDiagram();
+    });
+	</script>
+
+</body>
+</html>
